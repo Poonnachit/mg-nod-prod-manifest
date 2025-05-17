@@ -17,3 +17,9 @@ spec:
           name: mg-cart
           ports:
             - containerPort: 8080
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
