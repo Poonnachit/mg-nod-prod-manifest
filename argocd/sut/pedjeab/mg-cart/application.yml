@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mg-cart-app
+  name: sut-mg-cart-app
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
   # Add this finalizer ONLY if you want these to cascade delete.
@@ -20,7 +20,7 @@ spec:
   source:
     repoURL: git@github.com:Poonnachit/mg-nod-prod-manifest.git  # Can point to either a Helm chart repo or a git repo.
     targetRevision: HEAD  # For Helm, this refers to the chart version.
-    path: develop/pedjeab/mg-cart
+    path: sut/pedjeab/mg-cart
   
   destination:
     # cluster API URL
@@ -28,7 +28,7 @@ spec:
     # or cluster name
     # name: in-cluster
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    namespace: pedjeab
+    namespace: sut
 
   syncPolicy:
     automated:

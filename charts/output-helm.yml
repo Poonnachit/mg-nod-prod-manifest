@@ -1,0 +1,26 @@
+---
+# Source: app-web/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: release-name
+  name: release-name
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: release-name
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: release-name
+    spec:
+      containers:
+        - name: release-name
+          image: "nginx:"
+          ports:
+            - containerPort: 8080
+status: {}

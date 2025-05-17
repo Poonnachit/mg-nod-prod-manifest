@@ -13,7 +13,7 @@ spec:
         app: mg-cart
     spec:
       containers:
-        - image: mg-cart
-          name: nginx
+        - image: poonnachitdevops/mg-app:newtag
+          name: mg-cart
           ports:
             - containerPort: 8080
