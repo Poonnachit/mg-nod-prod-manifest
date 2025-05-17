@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mg-cart
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mg-cart
+  template:
+    metadata:
+      labels:
+        app: mg-cart
+    spec:
+      containers:
+        - image: mg-cart
+          name: nginx
+          ports:
+            - containerPort: 8080
