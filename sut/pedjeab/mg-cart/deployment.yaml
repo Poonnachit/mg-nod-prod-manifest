@@ -13,7 +13,7 @@ spec:
         app: mg-cart
     spec:
       containers:
-        - image: docker.io/poonnachitdevops/mg-app:sut-988f76e
+        - image: docker.io/poonnachitdevops/mg-app:sut-fd55007
           imagePullPolicy: Always
           name: mg-cart
           ports:
