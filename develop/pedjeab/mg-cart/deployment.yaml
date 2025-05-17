@@ -13,7 +13,7 @@ spec:
         app: mg-cart
     spec:
       containers:
-        - image: mg-cart
-          name: nginx
+        - image: mg-application
+          name: mg-cart
           ports:
             - containerPort: 8080
