@@ -13,7 +13,7 @@ spec:
         app: mg-cart
     spec:
       containers:
-        - image: poonnachitdevops/mg-app:sut-ba540aa55a2003bf570c60821ddada50bbc889bd
+        - image: docker.io/poonnachitdevops/mg-app:sut-e0a37bb73200565b73856a3734aa57d2b9dd9f35
           name: mg-cart
           ports:
             - containerPort: 8080
