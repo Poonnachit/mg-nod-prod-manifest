@@ -13,7 +13,7 @@ spec:
         app: mg-cart
     spec:
       containers:
-        - image: poonnachitdevops/mg-app:newtag
+        - image: poonnachitdevops/mg-app:7c3e39327dd6b6018564938889485881ca0c7b35
           name: mg-cart
           ports:
             - containerPort: 8080
