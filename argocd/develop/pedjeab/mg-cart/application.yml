@@ -18,9 +18,14 @@ spec:
   project: default
 
   source:
-    repoURL: git@github.com:Poonnachit/mg-nod-prod-manifest.git  # Can point to either a Helm chart repo or a git repo.
-    targetRevision: HEAD  # For Helm, this refers to the chart version.
-    path: develop/pedjeab/mg-cart
+    source:
+    path: charts
+    repoURL: git@github.com:Poonnachit/mg-nod-prod-manifest.git
+    targetRevision: HEAD
+    helm:
+      releaseName: dev-mg-cart
+      valueFiles:
+        - develop/pedjeab/mg-cart/values.yml
   
   destination:
     # cluster API URL
