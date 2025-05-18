@@ -25,7 +25,7 @@ spec:
     helm:
       releaseName: dev-mg-cart
       valueFiles:
-        - develop/pedjeab/mg-cart/values.yml
+        - ../develop/pedjeab/mg-cart/values.yml
   
   destination:
     # cluster API URL
