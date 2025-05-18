@@ -7,7 +7,7 @@ image:
   repository: docker.io/poonnachitdevops/mg-app
   pullPolicy: always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: sut-988f76e
+  tag: develop-c189fbd
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
