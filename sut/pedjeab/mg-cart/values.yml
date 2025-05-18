@@ -96,8 +96,3 @@ volumeMounts: []
 nodeSelector: {}
 tolerations: []
 affinity: {}
-spec:
-  template:
-    spec:
-      containers:
-        - image: docker.io/poonnachitdevops/mg-app:sut-39264b8
